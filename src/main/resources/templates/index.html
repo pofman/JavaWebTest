@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/mvc">
+    <head>
+        <meta charset="UTF-8"></meta>
+        <title>Events home</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <ul id="events">
+
+        </ul>
+        <script type="text/javascript" th:src="@{/js/base.js}"></script>
+
+            <!--<script>-->
+            <!--var app = angular.module('app', ['ngRoute','ngResource'])-->
+                <!--.service('Events', function ($http) {-->
+                    <!--var self = this;-->
+                    <!--self.fetch = function () {-->
+                        <!--return $http({-->
+                            <!--method: 'GET',-->
+                            <!--url: 'http://localhost:8080/api/events'-->
+                        <!--}).then(function ($data) {-->
+
+                        <!--})-->
+                    <!--};-->
+                <!--})-->
+                <!--.config(function($routeProvider){-->
+                    <!--var resolveEvents = {-->
+                        <!--events: function (Events) {-->
+                            <!--return Events.fetch();-->
+                        <!--}-->
+                    <!--};-->
+
+                    <!--$routeProvider-->
+                        <!--.when('/events',{-->
+                            <!--templateUrl: '/events.html',-->
+                            <!--controller: 'eventsController',-->
+                            <!--resolve: resolveEvents-->
+                        <!--})-->
+                        <!--.otherwise(-->
+                            <!--{ redirectTo: '/'}-->
+                        <!--);-->
+                <!--}).controller('eventsController', function($scope, events) {-->
+                <!--$scope.headingTitle = "Event List";-->
+            <!--});-->
+        <!--</script>-->
+    </body>
+</html>
