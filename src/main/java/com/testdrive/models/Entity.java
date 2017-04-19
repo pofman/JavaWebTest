@@ -6,8 +6,20 @@ public abstract class Entity {
     protected int id;
     protected String name;
 
+    public Entity(){
+        setId(new Random().nextInt());
+    }
+
     public Entity(String name) {
-        id = new Random().nextInt();
+        this();
+        setName(name);
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 

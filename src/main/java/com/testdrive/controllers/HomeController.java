@@ -12,7 +12,6 @@ public class HomeController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
-        System.out.print("habia una vez");
         return "index";
     }
 }

@@ -12,6 +12,11 @@
         <ul id="events">
 
         </ul>
+        <form action="/api/event" method="post">
+            <span>Event name</span><input type="text" id="name"/>
+            <span>Venue name</span><input type="text" id="venue.name"/>
+            <input id="save" type="submit"/>
+        </form>
         <script type="text/javascript" th:src="@{/js/base.js}"></script>
 
             <!--<script>-->

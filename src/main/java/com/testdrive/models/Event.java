@@ -7,6 +7,10 @@ public class Event extends Entity {
 
     private Venue venue;
 
+    public Event() {
+        super();
+    }
+
     public Event(String name, Venue venue) {
         super(name);
         this.venue = venue;
